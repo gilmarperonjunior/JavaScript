@@ -7,21 +7,31 @@
     <title>treino</title>
     <style>
         body{
-            background-color: aquamarine;
+            text-align: center;
+            margin: 0;
+            padding: 0;
             font: normal 20px Arial;
-            color: white;
         }
     </style>
 </head>
 <body>
-    <h1>INICIANDO ESTUDO DE DOM</h1>
-    <p class="p1">Aqui vai o resultado</p>
-    <p>Parágrafo2</p>
-    <div id="msg">Clique aqui:</div>
-    <script>
-        var p1 = window.document.getElementByClassName('p1')
-        var d = window.document.querySelector('div#msg')
-        d.innerHTML = 'Oi'
-    </script>
+   <h1>Titulo 1</h1>
+   <h1 id="h2">Titulo 2</h1>
+   <p class="p1">Parágrafo 1</p>
+   <p class="p1">Parágrafo 2</p>
+   <div id="div1">Div 1</div>
+   <div id="div1">Div 2</div>
+   <script>
+       var h1 = document.getElementsByTagName('h1')[0]
+       h1.innerText = 'Olá'
+       var h2 = document.getElementById('h2')
+       h2.innerText = 'Olá'
+       var p1 = document.getElementsByClassName('p1')[0]
+       p1.innerText = 'Olá'
+       var p1 = document.getElementsByClassName('p1')[1]
+       p1.innerText = 'Olá'
+       var div = document.querySelector('#div1')
+       div.innerText = 'Olá'
+   </script>
 </body>
 </html>

@@ -5,16 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>treino02</title>
-    
+    <style>
+        #div{
+            width: 200px;
+            height: 200px;
+            background-color: greenyellow;
+            font: bold 20px Arial;
+            color: blueviolet;
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Treino</h1>
-    <p>Parágrafo1</p>
-    <p class="paragrafo__desc">Parágrafo2</p>
-    <div class="div__desc">DIV1</div>
+    <div id="div">
+        Interaja...
+    </div>
     <script>
-        var pd = document.getElementByClassName('paragrafo__desc')
-        pd.inneText = 'Olá'
+        var div = document.getElementById('div')
+
+        div.addEventListener('click', clicar)
+        div.addEventListener('mouseenter', entrar)
+        div.addEventListener('mouseout', sair)
+
+        function clicar() {  
+            div.style.background = 'Blue'
+            div.innerHTML = 'Clicou!'
+        }
+        function entrar() {
+            div.innerHTML = 'Entrou!'
+        }
+        function sair() {
+            div.innerHTML = 'Saiu!'
+            div.style.background = 'greenyellow'
+        }
     </script>
 </body>
 </html>

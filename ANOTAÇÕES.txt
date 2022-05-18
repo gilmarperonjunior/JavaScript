@@ -303,4 +303,7 @@ OBS: o que estiver acima é chamado de parent, e abaixo chield
 *Funções: Conjuntos de códigos/linhas que vão ser executadas somente quando o evento ocorrer
 
 Ver Index03.HTML
+
+OBS: SEMPRE QUE ESTIVER NO LURAL DEVE USAR [], EXEMPLO: GETELEMENTSBYID()[]
+]
     
