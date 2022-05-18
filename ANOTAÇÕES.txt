@@ -293,11 +293,12 @@ OBS: o que estiver acima é chamado de parent, e abaixo chield
 
     Existe alguns eventos usando o mouse que são:
 
-    *mouseenter = quando o mouse entrar/passar na div
-    *mousemove = o mouse se mover pela div
-    *mousedown = quando clicar e segurar
-    *mouseup = quando eu soltar o botao de pressionar do mouse
-    *click = igual mouseenter mas aqui é quando sair da div
+    *onmouseenter = quando o mouse entrar/passar na div
+    *onmousemove = o mouse se mover pela div
+    *onmousedown = quando clicar e segurar
+    *onmouseup = quando eu soltar o botao de pressionar do mouse
+    *onclick = igual mouseenter mas aqui é quando sair da div
+    *onmouseout = Sair da DIV/ oposto de mouseenter
 
 *Funções: Conjuntos de códigos/linhas que vão ser executadas somente quando o evento ocorrer
 
