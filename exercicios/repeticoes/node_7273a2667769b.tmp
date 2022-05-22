@@ -1,0 +1,4 @@
+var fase = 1
+while(fase <=10){
+    console.log(`Fase ${fase}`)
+}

@@ -1,0 +1,73 @@
+==================================
+AULA 06/07
+*Entendendo o DOM
+    *é uma ACRÔNOMO PARA Document Object Model, conjunto de objetos dentro do meu navegador
+    que dará acesso aos componentes internos do WebSite (não funciona dentro do Node.js)
+
+*Árvore DOM:
+OBS: o que estiver acima é chamado de parent, e abaixo chield 
+    EXEMPLO: body é parent de h1, p, p, div MAS ele é chield de html, assim como html é parent de body ele é chield de document.
+    
+    *A raiz da árvore é chamada de window
+        
+        *Dentro do window temos: 
+        location : Dá a localizalção do meu site (URL por exemplo) 
+        document : Documento Atual
+            html: a parte HTML do meu site
+                head
+                    meta, title
+                body
+                    h1
+                    p 
+                    p 
+                        strong
+                    div
+        history: Guarda da onde eu vim
+
+*Selecionando ELENTOS da árvore DOM
+    *Por Marca/TagName
+    getElementsByTagName()
+    para selecionar o primeiro p, usa-se após o parênteses [0], caso eu queira selecioonar o sergundo p, uso [1], e assim sucessivamente. SEMPRE COMEÇANDO DO 0
+    var p1 = document.getElementsByTagName("p")[1]
+        p1.style.color = 'Blue'
+        document.write(p1.innerHTML) = Pega o texto com as formatações feitas.
+        alert(p1.innerText) = Pega o Texto sem as formatações.
+    
+    *Por ID
+        getElementsByid()
+        var d = document.getElementById("msg")
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando...' ( no início a tag div tinha o texto CLIQUE EM MIM, mas troquei Para
+        Estou aguradando usando o Innetext)
+        window.document.getElementById("msg").innerText = 'Olá' (outro metodo, mas esse é muito grande)
+
+    *Por Nome
+        getElementsByName()
+
+    *Por Classe
+        getElementsByClassName()
+        Sgue o mesmo exmplo de ID só que no lugar de ID é class
+
+    *Por Seletor
+        querySelector()
+            var d = window.document.querySelector('div#msg')
+        querySelectorAll()
+
+*EVENTOS DOM
+    *VAMPOS SUPOR QUE EU TENHA UMA DIV (INDEX02.HTML)
+
+    Existe alguns eventos usando o mouse que são:
+
+    *onmouseenter = quando o mouse entrar/passar na div
+    *onmousemove = o mouse se mover pela div
+    *onmousedown = quando clicar e segurar
+    *onmouseup = quando eu soltar o botao de pressionar do mouse
+    *onclick = igual mouseenter mas aqui é quando sair da div
+    *onmouseout = Sair da DIV/ oposto de mouseenter
+
+*Funções: Conjuntos de códigos/linhas que vão ser executadas somente quando o evento ocorrer
+
+Ver Index03.HTML
+
+OBS: SEMPRE QUE ESTIVER NO LURAL DEVE USAR [], EXEMPLO: GETELEMENTSBYID()[]
+]

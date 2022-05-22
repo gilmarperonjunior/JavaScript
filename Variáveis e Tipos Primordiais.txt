@@ -1,0 +1,105 @@
+==================================
+AULA01/02:
+
+*No JavaScript sempre que você ver o sinal de =, indicará que RECEBE algo.
+    Exemplo1: Vaga a1 = carro1 
+    Exemplo1: Quer dizer que a vaga a1 RECEBE o carro1
+
+Exemplo2: a1 = carro2 
+    Exemplo2: Para a vaga a1 RECEBER o carro2 é necessário o carro1 sair
+
+Exemplo3: a1=null
+    Exemplo3:Quer dizer que a vaga a1 não receberá carro nenhum (nula)
+
+*No JavaScript moderno, além de utilizar a palavra "var", também podemos usar a palavra "let"
+*No JavaScript podem existir variáveis pequenas
+    Exemplo1: varn1 = 5
+            varn2 = 8.5
+            varn3 = 15
+
+*Assim como podem também existir variáveis grandes
+    Exemplos2: vars1 = JavaScript
+            vars2 = Curso em Vídeo
+            vars3 = Guanabra
+
+*No JavaScript pode usar 3 tipos de aspas (é obrigatório ter as aspas após o =):
+''
+""
+´´
+
+*No JavaScript os nomes nas variáveis possuem um nome: IDENTIFICADORES, possuem algumas regras para escolher o nome:
+
+    *Podem começar com letras, $ ou _
+    *Não podem começar com números
+    *É possível usar letras ou números
+    *É possível usar acentos e símbolos
+    *Não Podem conter espaços
+    *Não podem ser palavras reservadas (repetidas)
+
+*Dicas para Escolher um nome no indicador (var)
+    *Letras Maiúsculas e Minúsculas fazem diferença
+    *Tente usar nomes coerentes para as variáveis
+    *Evite se tornar programador alfabeto e o contador kkkkkkk
+
+*Tipos Primitivos primordiais são:
+
+    *STRING
+    Exemplos: Mistura de caracteres (números e letras) com pontos/virgulas/traço
+
+    *NUMBER 
+    Exemplos: Números 
+
+    *BOOLEAN
+    Exemplos: Valores Boleanos (True/False)
+
+*Também existem: Null,Unidefined, Object (array), function.
+
+*O comando typeof serve pra ajudar a descobrir o tipo primitivo de um tipo.
+
+==================================
+AULA 03:
+    * O sinal de + pode servir para:
+    *conectar um prompt/alert e etc com um var
+    *Adição
+    *Concatenação ( relaciona ideias/coisas)
+
+Exemplos:
+    *Caso eu queira Somar duas variáveis devo definir se é uma SOMA. Caso contrário o JavaSript definirá como Concatenação.
+    *Para ser SOMA devo deixar um number + number
+    *Se for uma CONCATENAÇÃO devo deixar uma string + string
+
+*Métodos para converter de STRING para NUMBER
+    *Number.parselnt(n) = Para Números Inteiros
+    *Number.parseFloat(n) = Para números Reais (números com virgulas/quebrados)
+    *Number() = Serve para casos específicos (ele irá se virar e ver se é num. Inteiro ou Quebrado)
+
+*Método para converter de NUMBER para STRING
+    *String(n) = é como o Number(n)
+    *n.toString() = O que eu quero converter + toString()
+    *
+
+*Formatando String
+    var s = 'JavaScript'
+    Exemplos:
+    'Eu estou aprendendo s' = Não faz uso interpolação ( relação)
+    'eu estou aprendendo' + s = Faz uso Concatenação
+    `Eu estou aprendendo ${s}` = Faz uso Template String 
+    
+*Usando Template String 
+    Exemplo: `O aluno ${nome} de ${idade} anos tirou ${nota} na prova.
+    Resultado: O aluno Gilmar de 18 anos tirou 6.5 na prova.
+
+*Algusn outros exemplos de formatações/atributos de STRING:
+    *s(nome da var).length = Quantos Caracters a string tem.
+    *s.toUpperCase() = Joga a STRING para letras Maiúsculas
+    s.toLowerCser() = Joga a STRING para a letras Minúsculas
+
+*Formatando Number
+    var n1 = 1543.5
+    Exemplos: 
+    n1.toFixed()= irá pular mais uma casa decimal (1543.50/ 154.350)
+    .replace('' , '') = irá trocar elementos por outros (n1.toFixed(2).replace ('.' , ','))
+    Resultado: 1543,50
+    n1.toLocaleStrig('pt-BR', {style: 'currency', currency: 'BRL'})
+DICAS:
+    *PROMPT SEMPRE IRÁ DEVOLVER UM VALOR STRING

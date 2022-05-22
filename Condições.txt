@@ -1,0 +1,104 @@
+
+==================================
+AULA08/09
+
+*CONDIÇÕES são representas pela IF.
+    *Exemplo: if(condição){ <!-- AQUI É UM LADO, POR EXEMPLO O ESQUERDO-->
+        true
+    }else { <!-- Else quer dizer SE NÃO, aqui lado direito-->
+        false
+    } 
+
+*Alguns tipos de Condições.
+*Condição Simples não tem o 'else
+*if (condição){
+    true
+}
+
+*Condição Complexa (ilustrativo esse nome)
+*if (condição){
+    true
+}else{
+    False
+}
+
+*EXEMPLO NO NODE.js
+
+var vel = 70
+console.log(`A velocidade do seu carro é ${vel} km/h`)
+if(vel > 60) {
+    console.log(`Você ultrapassou a velocidade permitida e será multado.`)
+}
+console.log(`Dirija sempre usando cinto de segurança!`)
+
+
+*OUTRO EXEMPLOS NO NODE.js
+
+var país = 'Estados Unidos'
+console.log(`Vivendo em ${país}`)
+if( país == 'Brasil'){
+    console.log('Você é Brasileiro!')
+}else{
+    console.log('Você é Estrangeiro!') 
+}
+
+*CONDIÇÕES ANINHADAS
+*Pegar um condição composta e colocar outras condições dentro dela.
+
+    *Exemplo:
+
+    if(condi1) { true
+        bloco1
+    }else{ 
+        if(condi2){
+            bloco2
+        }else{
+            bloco3
+        }
+
+
+
+    }
+     
+var idade = 68
+console.log(`Você tem ${idade} anos.`)
+if (idade < 16) {
+    console.log('Não Vota')
+}else{
+    if (idade < 18 || idade > 65){ //Também pode ser if(idade >= 16 && idade <18).
+        console.log('Voto Opcional')
+    }else{
+        console.log('Voto Obrigatório')
+    }
+}   
+
+
+var agora = new Date() PEGA A HORA DO SISTEMA DO PC
+var hora = agora.getHours() CONECTA COM A VAR DE CIMA
+console.log(`Olá, agora são exatamente ${hora} horas.`)
+if (hora <= 5){
+    console.log('Boa Madrugada!, hora de dormir')
+}else if (hora <= 12){
+    console.log('Bom Dia!, hora de acordar')
+}else if (hora <= 18){
+    console.log('Boa Tarde!, hora de trabalhar')
+}else{
+    console.log('Boa Noite!, hora de dormir')
+}
+
+*CODIÇÃO MÚLTIPLA
+*Serve para valores FIXOS
+
+switch (expressão){
+    case valor 1:  (caso seja o primeiro valor)
+
+    case valor 2:  (caso seja o Segundo valor)
+
+    case valor 3:  (caso seja o terceiro valor)
+
+    default:       (caso não seja nenhum valor de cima) (opcional)
+
+}
+
+*OBS: dentro de cada case É OBRIGAÓRIO COLOCAR O COMANDO BREAK
+VER ex05.js

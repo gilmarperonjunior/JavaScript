@@ -1,0 +1,131 @@
+==================================
+AULA 04/05
+*Principais tipos de Operadores
+    *Artiméticos  
+    + Adição
+    - Subtraçao
+    * Multiplicação
+    / (divisão para resultados/divisões quebrados) 5/2 = 2,5
+    % (resto da divisão ineteira sobrando ) 5%2 = 1 (resto que sobrou)
+    ** Potência 5 elevado a 2 = 25
+   
+*Cuidado com o uso de operadores, pq existe precedente de operadores
+    Exemplos: 5+3/2 = primeiro virá o 3/2 = 1,5 dps somo com 5 = 6,5
+    
+    Exemplo: 5+3/2 = Caso eu queira que primeiro faça a soma de 5+3 deve-se usar ()
+    Resultado: (5+3)/2 = 4
+
+*Ordem de Precedêncais dos operadores:
+
+    () primeiro sempre será analisado parenteses
+    ** Depois será as potências
+    * / % Os 3 tem mesmo valor não importando a Ordem
+    + - e por fim esses.
+
+* Para guardar os valores devo usar Operadores de Atribuições Simples (*Atribuição).
+
+    Exemplos: var a, b, c, d, e, f. (Não é obrigatório ser alfabeto, de preferência contextualize).
+
+    Exemplos: 
+    var a = 5 + 3  8
+    var b = a % 5  3
+    var c = 5 * b ** 2 45
+    var d = 10 - a / 2  6
+    var e =  6 * 2 / d 2
+    var f =  b % e + 4 / e 3
+
+*Auto-Atribuições
+    Exemplos: var n = 3
+    n = n + 4  7
+    o valor "n" que antes valia 3 irá passar a valer 7, isso é chamado auto-atribuições
+    Mais exemplos: n = n - 5  2, agora n não valerá mais 7 e sim 2.
+
+*Vale resultar que caso a auto-atribuição seje sobre ele mesmo, podemos resumir esse n = n + 4
+    Exemplo: n = n + 4 ======> n+= 4 (Só irá valer caso o valor seje dele mesmo não irá valer os valores da seguinte forma:)
+    n = x + 4 =======> dessa forma não é possível fazer o resumo.
+
+*Valores de Incremento
+    Exemplo: var x = 5
+    x = x + 1 = 6
+    x = x - 1 = 5
+    x += 1 = 6
+    x -+ = 1 = 5
+    x++ Aqui podemos ver como seria usado o incremento
+    x-- Aqui podemos ver como seria usado o incremento
+     
+*Os Atributos de Relacionais são eles:
+   5 > 2  =====> true
+   7 < 4  =====> false
+   8 >= 8 =====> true
+   9 <= 7 =====> false
+   5 == 5 =====> true
+   4 != 4 =====> false
+
+*OBS: na programação = é o mesmo que "recebe" mas == é "igual", != quer dizer "diferente"
+*OBS: var a = 8 var b = 15 a <= b - 10 (primeiro será feito a parte aritmética que no caso é b - 10 pra Depois
+fazer a parte de relacionais a <=).
+
+*Operadores de Relacionais de Identidade
+    Exemplos:
+    5 == 5 true
+    5 == 5 '5' o JavaScript não irá identificar o String '' mas somente o número, então aqui seria true
+    5 === '5' Já aqui trÊs sinais de igual vai verificar se são identicos em valor e tipo, nesse caso
+    eles possuem o mesmo valor mas tipos diferentes ( number / string) então seria false
+    5 === 5 true
+
+*Os Operadores Lógicos são eles:
+    ! negação ===> Eu quero uma caneta que 'NÃO' seja azul.
+    && conjunção ===> Eu quero uma caneta AZUL 'E' VERMELHA.
+    || disjunções  ===> Eu quero uma caneta Azul 'OU' vermelha.
+
+
+* ! Tratado com operador Onário, depois da exclamação pode true/false ou uma expressão que dê um desses
+    Exemplos: uma qcoisa que não seja true é false ( e vice-versa)
+
+* && Tratado com Binário (dois valores lógicos)
+    Exemplos: Seguindo o exemplos da caneta
+    AZUL      VERMELHA
+    true   &&   true ===> Consegui as duas cores = true
+    true   &&   false ===> Consegui apenas uma cor = false
+    false  &&   true ===> Consegui apenas uma cor = false
+    false  &&   false ===> Não consegui de nenhuma cor = false
+
+*Disjunção São tratadas como binários (dois valores lógicos nos lados), basta que apenas um deles seja verdadeiro (true)
+    Exemplos: 
+    true   || true ===> true
+    true   || false ===> true
+    false  || true ===> true
+    false  || false  ===> false
+
+var a = 5
+var b = 8
+*OBS: a > b && b % 2 == 0 
+*Para Resolver esta conta, primeiro se resolve as artiméticas, depois relacionais e por fim os lógicos.
+Resultado = false
+
+*OBS: CASO NA MESMA CONTA TENHA ||, &&, ! 
+A ORDEM SEMPRE SERÁ: NÃO, E, OU.
+Exemplos: Idade >= 15 && idade <= 17 (idade está entre 15 e 17?)
+Exemplos: Estado: 'RJ' || 'SP' (O estado é RJ ou SP?)
+Exemplos: >1500 && sexo != 'M' (o salário é acima de 1500 e não homem?)
+
+RESUMO DAS ORDEMS EM UMA CONTA: 
+1° Artiméticos : (), **< /, +, - 
+2° Relacionais : > < >= <= (quem aparece primeiro da ordem esquerda para direita)
+3° Lógicos : !, &&< || ( aqui existe ordem: NÃO !, E &&, OU ||)
+
+*Os TERNÁRIOS São eles:
+  ? 
+  :
+
+  Exemplos:
+  teste?true:false
+  média >= 7.0? "Aprovado" : "Reprovado"
+  a média é maior ou igual a 7? se for é Aprovado se não é reprovado.
+
+  Exemplos:
+  var x = 8
+  var res = x % 2 == 0 ? 5: 9
+  Resultado= 0 == 0? 5:9 Vai ser 5, pois, 0 é igual a zero (true) e se fr true é 5 se não seria 9.
+  res
+  5
