@@ -1,0 +1,2 @@
+*Funções são AÇÕES executadas assim que são CHAMADAS ou em decorrência de algum evento.
+*Uma função pode receber PARÂMETROS e retornar resultados.

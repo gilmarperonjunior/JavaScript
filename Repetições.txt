@@ -1,0 +1,24 @@
+*REPETIÇÕES
+
+usa-se while(condição){
+
+}	
+
+
+
+*OUTRO MÉTODO
+
+do{
+	console.log()
+}while(condição)
+
+*REPETIÇÕES COM VARIÁVEL DE CONTROLE
+
+SÃO FEITAS TRÊS COISAS: INICIALIZAÇÃO, TESTE LÓGICO E POR FIM INCREMENTAÇÃO.
+
+(VER IMAGEM NA PASTA)
+
+*Para usar ela usamos o comando 
+for (inicio ; teste ; incr){
+
+}

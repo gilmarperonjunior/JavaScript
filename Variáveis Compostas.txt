@@ -1,0 +1,27 @@
+*Variáveis Simples: só conseguem armazenar um valor de cada vez
+*Variáveis Compostas: Conseguem armazenar mais de 1 valor por vez
+
+*Uma variável composta é feita de:
+ 
+    *a = array,vetor
+    *elementos = um par que agrupa o espaço da memória, o valor dentro e o índice
+    *indice/chave
+    *conteúdo do elemento
+
+*Se eu quiser adicionar outro conteudo uso dois métodos:
+
+    num[3] = 6
+    Ou seja, no indice 3 será adicionado o número 6, caso não exista o indice 3, o javascript adicionará automaticamente
+    OBS: CASO EXISTA JA UM NÚMERO ELE IRÁ SUBSTITUIR O QUE ESTAVA LÁ
+
+
+    num.push(7) 
+    Ou seja irá adicionar sempre no final dos indices
+
+*Para saber o comprimento do array
+
+    num.length = é um atributo usado dentro do ${}
+
+*Se eu quiser buscar um CONTEUDO dentro do meu elemento uso
+
+    num.indexOf(6) = o "O" é maiúsculo

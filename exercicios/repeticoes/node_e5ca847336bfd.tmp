@@ -1,0 +1,10 @@
+var c = 1
+/*
+while(c <= 5){
+    console.log('Boa tarde!')
+    c++
+}
+*/
+for(var c; 1<=5; c++){
+    console.log('Boa Tarde!')
+}
